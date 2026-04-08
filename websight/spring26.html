@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bliss | Spring26</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="index.html" class="top-banner">🛒 Free shipping on all orders over €100</a>
+
+<header>
+<div class="header-inner">
+<h1><a href="index.html">Bliss Swimwear</a></h1>
+
+<nav>
+<ul>
+<li><a href="spring26.html">Spring26</a></li>
+<li><a href="bestsellers.html">Best Sellers</a></li>
+<li><a href="all.html">All</a></li>
+<li><a href="about.html">About Us</a></li>
+</ul>
+</nav>
+
+<button class="cart-button" onclick="openCart()">Cart (<span id="cart-count">0</span>)</button>
+</div>
+</header>
+
+<main>
+<h2>Spring 26 Collection</h2>
+<p>Yummy new styles for the upcoming season</p>
+
+<div class="product-grid">
+<div class="product-card">
+<img src="lemon-meringue.jpg" alt="Lemon meringue bikini" class="product-image">
+<h3>Lemon meringue</h3>
+<p>€45</p>
+<select id="size-lemon" class="size-select">
+<option value="">Select Size</option>
+<option value="XS">XS</option>
+<option value="S">S</option>
+<option value="M">M</option>
+<option value="L">L</option>
+</select>
+<br>
+<button onclick="addToCart('Lemon meringue', 45, 'size-lemon')">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="chocolate-chip.jpg" alt="Chocolate chip bikini" class="product-image">
+<h3>Chocolate chip</h3>
+<p>€50</p>
+<select id="size-chocolate" class="size-select">
+<option value="">Select Size</option>
+<option value="XS">XS</option>
+<option value="S">S</option>
+<option value="M">M</option>
+<option value="L">L</option>
+</select>
+<br>
+<button onclick="addToCart('Chocolate chip', 50, 'size-chocolate')">Add to Cart</button>
+</div>
+
+<div class="product-card">
+<img src="candi.jpg" alt="Candi bikini" class="product-image">
+<h3>Candi</h3>
+<p>€50</p>
+<select id="size-candi" class="size-select">
+<option value="">Select Size</option>
+<option value="XS">XS</option>
+<option value="S">S</option>
+<option value="M">M</option>
+<option value="L">L</option>
+</select>
+<br>
+<button onclick="addToCart('Candi', 50, 'size-candi')">Add to Cart</button>
+</div>
+</div>
+</main>
+
+<div id="cart-popup" class="cart-popup">
+<div class="cart-box">
+<span class="close-cart" onclick="closeCart()">&times;</span>
+<h2>Your Cart</h2>
+<ul id="cart-items"></ul>
+<div class="cart-footer">
+<p id="cart-total">Total: €0.00</p>
+<div class="cart-actions">
+<button class="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+<button class="checkout-btn">Checkout</button>
+</div>
+</div>
+</div>
+</div>
+
+<div id="cart-message">Added to cart!</div>
+
+<script src="script.js"></script>
+</body>
+</html>

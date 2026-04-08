@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bliss | Home</title>
+<meta name="description" content="Bliss is a modern online bikini store offering stylish, cool and fun beachwear.">
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<a href="index.html" class="top-banner">🛒 Free shipping on all orders over €100</a>
+
+<header>
+<div class="header-inner">
+
+<h1><a href="index.html">Bliss Swimwear</a></h1>
+
+<nav>
+<ul>
+<li><a href="spring26.html">Spring26</a></li>
+<li><a href="bestsellers.html">Best Sellers</a></li>
+<li><a href="all.html">All</a></li>
+<li><a href="about.html">About Us</a></li>
+</ul>
+</nav>
+
+<button class="cart-button" onclick="openCart()">
+Cart (<span id="cart-count">0</span>)
+</button>
+
+</div>
+</header>
+
+<main class="hero">
+<h2>Find your Bliss</h2>
+<p>Discover your comfort, confidence, and style.</p>
+
+<div class="contact-buttons">
+<a href="mailto:info@blissswim.com">Email Us</a>
+<a href="tel:+35312345678">Call Us</a>
+</div>
+</main>
+
+<div id="cart-popup" class="cart-popup">
+<div class="cart-box">
+
+<span class="close-cart" onclick="closeCart()">×</span>
+
+<h2>Your Cart</h2>
+
+<ul id="cart-items"></ul>
+
+<p id="cart-total">Total: €0.00</p>
+
+<button onclick="clearCart()">Clear Cart</button>
+<button>Checkout</button>
+
+</div>
+</div>
+
+<div id="cart-message">Added to cart!</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
